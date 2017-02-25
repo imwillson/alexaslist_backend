@@ -1,0 +1,23 @@
+{
+  "name": "alexa-list",
+  "version": "1.0.0",
+  "description": "a Craigslist clone using Amazon Alexa for interaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasjativa/alexa-list.git"
+  },
+  "author": "Nicholas Jativa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholasjativa/alexa-list/issues"
+  },
+  "homepage": "https://github.com/nicholasjativa/alexa-list#readme",
+  "devDependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1"
+  }
+}
