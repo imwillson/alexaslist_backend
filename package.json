@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicholasjativa/alexa-list.git"
+    "url": "git+https://github.com/nicholasjativa/alexaslist_backend.git"
   },
   "author": "Nicholas Jativa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicholasjativa/alexa-list/issues"
+    "url": "https://github.com/nicholasjativa/alexaslist_backend/issues"
   },
-  "homepage": "https://github.com/nicholasjativa/alexa-list#readme",
+  "homepage": "https://github.com/nicholasjativa/alexslist_backend#readme",
   "devDependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1"
