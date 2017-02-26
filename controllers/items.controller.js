@@ -6,6 +6,7 @@ mongoose.connect('mongodb://localhost:27017/alexaslist')
 
 /* Create an Item (accessed at POST http://localhost:8080/api/items) */
 router.post('/', function(req, res) {
+    console.log(req.body);
     var item = new Item();
     item.id = req.body.id;
     item.name = req.body.name;
@@ -14,10 +15,11 @@ router.post('/', function(req, res) {
     item.price = req.body.price;
     item.owner = req.body.owner;
     item.location = req.body.location;
+    item.imgUrl = req.body.imgUrl;
 
     // Save the item and check for err
     item.save(function(err) {
-        if (err) res.send(err);
+        if (err) {console.log(err);res.send(err)};
 
     res.json(item);
     });

@@ -1,6 +1,7 @@
 var express = require('express');
-var app = express();    
+var app = express();
 var bodyParser = require('body-parser');
+var cors = require('cors');
 
 /* Configure app to use bodyParser which will let us get data from POST */
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,8 +14,11 @@ var port = process.env.PORT || 8080;
 var router = express.Router();
 
 /* Middleware for all reqs */
-router.use(function(req, res, next) {
+router.use(function (req, res, next) {
     console.log(req.method + ' is occurring.');
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', ['GET', 'PUT', 'POST', 'DELETE']);
     next();
 });
 

@@ -8,7 +8,8 @@ var ItemSchema = new Schema({
     description: String,
     price: Number,
     owner: String,
-    location: String
+    location: String,
+    imgUrl: String
 });
 
 module.exports = mongoose.model('Item', ItemSchema);
