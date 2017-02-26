@@ -1,1 +1,1 @@
-web: env NODE_PATH=./node_modules node server.js
+web: node server.js
